@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Dream Companies</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            background: #0b1220;
+            color: #eef3fb;
+            margin: 0;
+            padding: 18px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* NAV */
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto 18px;
+            background: #071126;
+            padding: 10px 14px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            gap: 12px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .logo-badge {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0b3d91;
+            color: #fff;
+            font-weight: 800;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+            font-size: 13px;
+        }
+
+        .links {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .links a {
+            color: #cdd8e6;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 14px;
+            transition: background .12s, transform .12s, color .12s;
+        }
+
+        .links a:hover,
+        .links a:focus {
+            background: rgba(255, 255, 255, 0.03);
+            color: #fff;
+            transform: translateY(-2px);
+            outline: none;
+        }
+
+        .links a.active {
+            background: #eef3fb;
+            color: #0b1220;
+            font-weight: 700;
+            box-shadow: 0 8px 22px rgba(14, 30, 60, 0.3);
+        }
+
+        .menu-btn {
+            display: none;
+            background: transparent;
+            border: 0;
+            color: #cdd8e6;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 6px;
+        }
+
+        .cta {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .cta .btn {
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: #0b3d91;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 6px 14px rgba(11, 61, 145, 0.15);
+            transition: transform .12s, box-shadow .12s;
+        }
+
+        .cta .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(11, 61, 145, 0.25);
+        }
+
+        .header {
+            text-align: center;
+            margin: 6px auto 18px;
+            max-width: 1100px;
+        }
+
+        .header h1 {
+            margin: 6px 0;
+            font-size: clamp(20px, 4vw, 34px);
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            color: #fff;
+            text-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+        }
+
+        .header p {
+            color: #b7c0cc;
+            margin: 6px 0 0;
+            font-size: 14px;
+        }
+
+    
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.12));
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.55);
+        }
+
+        .container h2 {
+            font-size: 22px;
+            margin-top: 0;
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 10px;
+        }
+
+        .container p {
+            color: #dbe9ff;
+            line-height: 1.6;
+            margin: 12px 0;
+            font-size: 15px;
+        }
+
+        .section {
+            margin: 16px 0;
+        }
+
+        .section ul {
+            margin: 8px 0;
+            padding-left: 20px;
+            color: #f0f8ff;
+        }
+
+        .section li {
+            margin: 6px 0;
+            color: #dbe9ff;
+        }
+
+        .highlight {
+            color: #7c3aed;
+            font-weight: 600;
+        }
+
+     
+        footer {
+            text-align: center;
+            color: #9aa4b2;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 880px) {
+            .nav {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .menu-btn {
+                display: inline-block;
+            }
+
+            .links {
+                display: none;
+                position: absolute;
+                left: 12px;
+                right: 12px;
+                top: 64px;
+                flex-direction: column;
+                background: #071126;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+                z-index: 40;
+            }
+
+            .links.show {
+                display: flex;
+            }
+
+            .cta {
+                display: none;
+            }
+
+            .container {
+                padding: 14px;
+            }
+        }
+
+        a:focus {
+            outline: 2px solid rgba(124, 58, 237, 0.18);
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="brand">
+            <div class="logo-badge">DC</div>
+            Dream Companies
+        </div>
+
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" title="Toggle menu" aria-label="Toggle navigation">☰</button>
+
+        <div class="links" id="nav-links" role="menubar" aria-hidden="true">
+            <a href="index.html" role="menuitem">Home</a>
+            <a href="contact.html" role="menuitem">Contact</a>
+        </div>
+
+        <div class="cta" aria-hidden="false">
+            <a class="btn" href="index.html">Go the Home!   </a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>About this project</h1>
+        <p>Learning responsive web design and modern CSS practices</p>
+    </header>
+
+    <main class="container">
+        <h2>What is this?</h2>
+        <p>This is a <span class="highlight">WAD (Web Application Development) practical assignment</span> for first-year students. It's a simple, clean showcase of modern tech companies with responsive design principles applied throughout.</p>
+
+        <div class="section">
+            <h2>Project goals</h2>
+            <ul>
+                <li>Build responsive layouts using CSS Grid and Flexbox</li>
+                <li>Implement mobile-first design with media queries</li>
+                <li>Create clean, accessible navigation systems</li>
+                <li>Learn about semantic HTML and ARIA attributes</li>
+                <li>Practice basic JavaScript for interactivity (menu toggle)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technologies used</h2>
+            <ul>
+                <li><strong>HTML5</strong> — semantic markup, accessibility features</li>
+                <li><strong>CSS3</strong> — Grid, Flexbox, animations, gradients, media queries</li>
+                <li><strong>JavaScript</strong> — menu toggle, lazy-loading images, event handling</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Featured companies</h2>
+            <p>The site showcases <span class="highlight">four visionary companies</span>:</p>
+            <ul>
+                <li><strong>SpaceX</strong> — Reusable rockets and Mars exploration</li>
+                <li><strong>Tesla</strong> — Electric vehicles and sustainable energy</li>
+                <li><strong>OpenAI</strong> — Artificial intelligence research and safety</li>
+                <li><strong>NVIDIA</strong> — GPU technology and AI computing</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Learning outcomes</h2>
+            <p>Through this project, students learn to:</p>
+            <ul>
+                <li>Design and build responsive, multi-page websites</li>
+                <li>Use modern CSS techniques (Grid, Flexbox, animations)</li>
+                <li>Create accessible navigation and interactive elements</li>
+                <li>Write clean, maintainable HTML/CSS/JS code</li>
+                <li>Understand mobile-first design philosophy</li>
+                <li>Implement SEO best practices and semantic HTML</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dream Companies © 2025 • A WAD Practical Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

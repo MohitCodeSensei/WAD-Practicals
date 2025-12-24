@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Companies — Dream Companies</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1220;
+            color: #eef3fb;
+            margin: 0;
+            padding: 18px
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto 16px;
+            background: #071126;
+            padding: 10px 14px;
+            border-radius: 8px
+        }
+
+        .nav .links a {
+            color: #cdd8e6;
+            text-decoration: none;
+            margin-left: 14px
+        }
+
+        .nav .links a.active {
+            color: #fff;
+            font-weight: 700
+        }
+
+        .grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .company {
+            flex: 1 1 240px;
+            padding: 14px;
+            border-radius: 8px;
+            color: #fff;
+            min-width: 220px
+        }
+
+        .company .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 8px
+        }
+
+        .spacex {
+            background: #0b3d91
+        }
+
+        .spacex .logo {
+            background: #062449
+        }
+
+        .tesla {
+            background: #cc0000
+        }
+
+        .tesla .logo {
+            background: #7a0000
+        }
+
+        .openai {
+            background: #7c3aed
+        }
+
+        .openai .logo {
+            background: #075985
+        }
+
+        .nvidia {
+            background: #083b11
+        }
+
+        .nvidia .logo {
+            background: #1b5e20
+        }
+
+        .title {
+            font-size: 18px;
+            margin: 6px 0
+        }
+
+        .desc {
+            color: #dbe9ff;
+            font-size: 14px
+        }
+
+        footer {
+            text-align: center;
+            color: #9aa4b2;
+            margin-top: 18px
+        }
+
+        @media(min-width:880px) {
+            .grid {
+                flex-wrap: nowrap
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" role="navigation">
+        <div class="brand">Dream Companies</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="companies.html" class="active">Companies</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="grid" aria-label="companies list">
+        <section class="company spacex" aria-labelledby="s-title">
+            <div class="logo">SX</div>
+            <div id="s-title" class="title">SpaceX</div>
+            <div class="desc">
+                Mission: make life multiplanetary. Key areas: Avionics, Propulsion, Manufacturing.
+            </div>
+        </section>
+
+        <section class="company tesla" aria-labelledby="t-title">
+            <div class="logo">TS</div>
+            <div id="t-title" class="title">Tesla</div>
+            <div class="desc">
+                Mission: accelerate sustainable energy. Key areas: Autopilot, Batteries, Production.
+            </div>
+        </section>
+
+        <section class="company openai" aria-labelledby="o-title">
+            <div class="logo">AI</div>
+            <div id="o-title" class="title">OpenAI</div>
+            <div class="desc">
+                Mission: build safe AGI. Key areas: Model research, Safety, Platform infra.
+            </div>
+        </section>
+
+        <section class="company nvidia" aria-labelledby="n-title">
+            <div class="logo">NV</div>
+            <div id="n-title" class="title">NVIDIA</div>
+            <div class="desc">
+                Leader in GPUs and ML tooling. Key areas: GPU design, SDKs, Data-center solutions.
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

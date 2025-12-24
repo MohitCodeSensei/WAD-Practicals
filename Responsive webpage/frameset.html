@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frameset Example</title>
+</head>
+<!-- Simple frameset: header row and a two-column body -->
+<frameset rows="100,*" frameborder="0">
+  <frame src="header.html" name="header" scrolling="no" noresize>
+  <frameset cols="200,*">
+    <frame src="nav.html" name="nav">
+    <frame src="main.html" name="main">
+  </frameset>
+</frameset>
+<noframes>
+  <body>
+    <h1>Frameset Example</h1>
+    <p>Your browser does not support frames. Open the pages directly:</p>
+    <ul>
+      <li><a href="header.html">Header</a></li>
+      <li><a href="nav.html">Navigation</a></li>
+      <li><a href="main.html">Main</a></li>
+    </ul>
+  </body>
+</noframes>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SpaceX — Dream Companies</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1220;
+      color: #eef3fb;
+      padding: 18px;
+      margin: 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto 16px;
+      background: #071126;
+      padding: 10px 14px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      position: relative;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900
+    }
+
+    .logo-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b3d91;
+      color: #fff;
+      font-weight: 800
+    }
+
+    .links {
+      display: flex;
+      gap: 8px
+    }
+
+    .links a {
+      color: #cdd8e6;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 999px
+    }
+
+    .links a.active {
+      background: #eef3fb;
+      color: #0b1220;
+      font-weight: 700
+    }
+
+    .header {
+      max-width: 1100px;
+      margin: 6px auto 6px;
+      text-align: left
+    }
+
+    .hero {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: #071833;
+      padding: 18px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero .left {
+      flex: 0 0 120px
+    }
+
+    .hero .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #0b3d91, #062449);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 20px;
+      overflow: hidden
+    }
+
+    .hero .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block
+    }
+
+    .hero .content {
+      flex: 1
+    }
+
+    h1 {
+      margin: 0 0 6px
+    }
+
+    p.lead {
+      color: #cfe7ff;
+      margin: 6px 0 0
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 18px auto;
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr
+    }
+
+    .card {
+      background: #071126;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.02)
+    }
+
+    .muted {
+      color: #9aa4b2;
+      font-size: 14px
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 12px
+    }
+
+    .list {
+      margin: 8px 0;
+      padding-left: 18px;
+      color: #f0f8ff
+    }
+
+    .small {
+      font-size: 14px;
+      color: #dbe9ff
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #0b3d91;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700
+    }
+
+    .prog {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start
+    }
+
+    .prog img.prog-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.02)
+    }
+
+    footer {
+      text-align: center;
+      color: #9aa4b2;
+      margin-top: 18px
+    }
+
+    @media (max-width:880px) {
+      .two-col {
+        grid-template-columns: 1fr
+      }
+
+      .hero {
+        flex-direction: column;
+        align-items: flex-start
+      }
+
+      .hero .left {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav" role="navigation">
+    <div class="brand">
+      <div class="logo-badge">DC</div>
+      Dream Companies
+    </div>
+
+
+    <div class="links" role="menubar">
+      <a href="index.html" role="menuitem">Home</a>
+      <a href="about.html" role="menuitem">About</a>
+      <a href="contact.html" role="menuitem">Contact</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="hero">
+      <div class="left">
+        <div class="logo" aria-hidden="true">
+          <img src="spacex.png" alt="SpaceX logo" loading="lazy" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>SpaceX</h1>
+        <p class="lead">Space Exploration Technologies Corp. — aerospace manufacturer and space transport services company focused on lowering space access cost and enabling Mars colonization.</p>
+        <p class="muted">Founded: 2002 · Founder: Elon Musk · Headquarters: Hawthorne, California</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Overview</h2>
+      <p class="small">SpaceX designs, manufactures and launches advanced rockets and spacecraft. Primary products include the Falcon 9 and Falcon Heavy launch vehicles, Dragon spacecraft family, Starlink satellite constellation and Starship — a fully reusable spacecraft system being developed for deep-space missions.</p>
+    </section>
+
+    <div class="two-col">
+      <section class="card">
+        <h2>Major programs</h2>
+        <div class="grid">
+          <div class="prog">
+
+            <img class="prog-img" src="falcon9.png" alt="Falcon 9" loading="lazy" onerror="this.style.display='none'">
+            <div>
+              <h3>Falcon 9</h3>
+              <p class="small">Two-stage orbital launch vehicle with a reusable first stage. Used for commercial launches, ISS resupply, crew transport (with Crew Dragon) and Starlink deployment.</p>
+            </div>
+          </div>
+
+          <div class="prog">
+            <img class="prog-img" src="falconheavy.png" alt="Falcon Heavy" loading="lazy" onerror="this.style.display='none'">
+            <div>
+              <h3>Falcon Heavy</h3>
+              <p class="small">Heavy-lift variant using three Falcon cores. Offers higher payload capacity for heavy payloads and interplanetary missions.</p>
+            </div>
+          </div>
+
+          <div class="prog">
+            <img class="prog-img" src="dragon.png" alt="Dragon" loading="lazy" onerror="this.style.display='none'">
+            <div>
+              <h3>Dragon & Crew Dragon</h3>
+              <p class="small">Cargo Dragon transports supplies to the ISS. Crew Dragon (Dragon 2) transports astronauts — first private vehicle to carry humans to the ISS.</p>
+            </div>
+          </div>
+
+          <div class="prog">
+            <img class="prog-img" src="starship.png" alt="Starship" loading="lazy" onerror="this.style.display='none'">
+            <div>
+              <h3>Starship</h3>
+              <p class="small">Next-generation fully reusable spacecraft and super heavy booster intended for Mars missions, lunar landings (NASA Human Landing System selected Starship for Artemis), and high-capacity Earth-to-Earth transport.</p>
+            </div>
+          </div>
+
+          <div class="prog">
+            <img class="prog-img" src="starlink.png" alt="Starlink" loading="lazy" onerror="this.style.display='none'">
+            <div>
+              <h3>Starlink</h3>
+              <p class="small">Large satellite constellation providing global broadband internet. Important revenue stream and operational system for space-to-ground connectivity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h3>Quick facts</h3>
+        <ul class="list">
+          <li>First orbital launch: Falcon 1 (2008)</li>
+          <li>First successful first-stage landing: 2015</li>
+          <li>First commercial crewed flight to ISS: 2020 (Crew Dragon Demo-2)</li>
+          <li>Starlink beta active in many countries</li>
+        </ul>
+
+        <h3>Careers & culture</h3>
+        <p class="small">Engineers cite fast iteration, hardware + software integration, hands-on manufacturing and mission-driven teams. Hiring focuses on spacecraft, propulsion, avionics, software, production and operations.</p>
+        <a class="cta" href="https://www.spacex.com/careers" target="_blank" rel="noopener">Careers @ SpaceX</a>
+      </aside>
+    </div>
+
+    <section class="card">
+      <h2>Technology & engineering highlights</h2>
+      <ul class="list">
+        <li><strong>Reusable rocketry:</strong> rapid turnaround and booster landings reduce launch cost.</li>
+        <li><strong>Merlin & Raptor engines:</strong> Merlin family powers Falcon series (kerosene/LOX). Raptor (methane/LOX) designed for Starship high-performance cycles.</li>
+        <li><strong>Autonomous flight software:</strong> real-time guidance, navigation and control, and precision landing algorithms.</li>
+        <li><strong>Vertical integration:</strong> in-house manufacturing for avionics, tanks, structures and software to accelerate iteration.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Operational footprint</h2>
+      <p class="small">Launch sites include Cape Canaveral (LC-40), Kennedy Space Center (LC-39A), Vandenberg Space Force Base, and Boca Chica (Starbase) for Starship testing. Manufacturing & R&D centered in Hawthorne, with additional facilities for production and testing across the U.S.</p>
+    </section>
+
+    <section class="card">
+      <h2>Recent achievements & milestones</h2>
+      <ul class="list">
+        <li>Routine Falcon 9 re-flights enabling commercial launch cadence.</li>
+        <li>Successful Crew Dragon crewed missions to the ISS for NASA.</li>
+        <li>Starlink rapidly deployed thousands of satellites and broadened global coverage.</li>
+        <li>Continued Starship prototype development with high-altitude testing and iterative improvements.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>How to learn more / resources</h2>
+      <ul class="list">
+        <li><a href="https://www.spacex.com" target="_blank" rel="noopener">Official site</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/SpaceX" target="_blank" rel="noopener">SpaceX — Wikipedia</a></li>
+        <li><a href="https://www.spacex.com/vehicles/falcon-9/" target="_blank" rel="noopener">Falcon 9 overview</a></li>
+        <li><a href="https://www.spacex.com/vehicles/starship/" target="_blank" rel="noopener">Starship overview</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>For students & applicants</h2>
+      <p class="small">Recommended prep: systems-level projects, embedded/real-time software, control systems, propulsion fundamentals, CAD & manufacturing skills, and internships. Contribute to open-source projects and build demonstrable hardware/software projects to stand out.</p>
+      <p class="small">Typical interview topics: fundamentals, system design, coding for embedded systems, testing methodology and hands-on engineering problem solving.</p>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+
+</html>
