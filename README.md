@@ -20,7 +20,7 @@ Develop structured, scalable, and maintainable web projects
 Build a strong foundation for advanced full-stack development
 
 📂 Repository Structure
-Web-Application-Development/
+WAD-Practicals
 │
 ├── Lectures/
 │   ├── Lecture-01/
